@@ -1,0 +1,30 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity AND2 is
+	PORT (a,b: IN STD_LOGIC;
+			o : OUT STD_LOGIC);
+end AND2;
+
+architecture Behavioral of AND2 is
+
+begin
+	o <= a and b;
+end Behavioral;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity AND4 is
+	PORT (a,b,c,d: IN STD_LOGIC;
+			o : OUT STD_LOGIC);
+end AND4;
+
+architecture Behavioral of AND2 is
+component AND2 is
+	PORT (a,b: IN STD_LOGIC;
+			o : OUT STD_LOGIC);
+end component;
+begin
+	o <= a and b;
+end Behavioral;

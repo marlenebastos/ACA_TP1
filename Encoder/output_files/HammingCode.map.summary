@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 20 15:45:46 2018
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : HammingCode
+Top-level Entity Name : HammingCode
+Family : Cyclone IV E
+Total logic elements : 7
+    Total combinational functions : 7
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

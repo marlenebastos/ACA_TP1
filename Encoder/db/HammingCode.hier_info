@@ -1,0 +1,155 @@
+|HammingCode
+m[0] => XOR_1bit:greenBit.b
+m[0] => x[4].DATAIN
+m[1] => XOR_1bit:orange_m10Bit.a
+m[1] => XOR_1bit:m10_greenBit.b
+m[1] => x[5].DATAIN
+m[2] => XOR_1bit:orangeBit.b
+m[2] => x[6].DATAIN
+m[3] => XOR_1bit:orangeBit.a
+m[3] => XOR_1bit:m7_m8Bit.b
+m[3] => x[7].DATAIN
+m[4] => XOR_1bit:yellow_m7Bit.a
+m[4] => XOR_1bit:m7_m8Bit.a
+m[4] => x[8].DATAIN
+m[5] => XOR_1bit:yellowBit.b
+m[5] => x[9].DATAIN
+m[6] => XOR_1bit:yellowBit.a
+m[6] => XOR_1bit:m3_m5Bit.b
+m[6] => x[10].DATAIN
+m[7] => XOR_1bit:redBit1.b
+m[7] => x[11].DATAIN
+m[8] => XOR_1bit:redBit1.a
+m[8] => XOR_1bit:m3_m5Bit.a
+m[8] => x[12].DATAIN
+m[9] => XOR_1bit:redBit0.b
+m[9] => XOR_1bit:orange_m2Bit.a
+m[9] => x[13].DATAIN
+m[10] => XOR_1bit:redBit0.a
+m[10] => XOR_1bit:greenBit.a
+m[10] => x[14].DATAIN
+x[0] <= XOR_1bit:p4.o
+x[1] <= XOR_1bit:p3.o
+x[2] <= XOR_1bit:p2.o
+x[3] <= XOR_1bit:p1.o
+x[4] <= m[0].DB_MAX_OUTPUT_PORT_TYPE
+x[5] <= m[1].DB_MAX_OUTPUT_PORT_TYPE
+x[6] <= m[2].DB_MAX_OUTPUT_PORT_TYPE
+x[7] <= m[3].DB_MAX_OUTPUT_PORT_TYPE
+x[8] <= m[4].DB_MAX_OUTPUT_PORT_TYPE
+x[9] <= m[5].DB_MAX_OUTPUT_PORT_TYPE
+x[10] <= m[6].DB_MAX_OUTPUT_PORT_TYPE
+x[11] <= m[7].DB_MAX_OUTPUT_PORT_TYPE
+x[12] <= m[8].DB_MAX_OUTPUT_PORT_TYPE
+x[13] <= m[9].DB_MAX_OUTPUT_PORT_TYPE
+x[14] <= m[10].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:redBit0
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:redBit1
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:redBitT
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:yellowBit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:yellow_m7Bit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:orange_m2Bit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:orangeBit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:greenBit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:orange_m10Bit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:green_yellowBit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:m3_m5Bit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:m7_m8Bit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:m10_greenBit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:m3_m5_m7_m8Bit
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:p1
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:p2
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:p3
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HammingCode|XOR_1bit:p4
+a => o.IN0
+b => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+

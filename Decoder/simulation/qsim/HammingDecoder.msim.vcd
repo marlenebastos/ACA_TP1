@@ -1,0 +1,352 @@
+$comment
+	File created using the following command:
+		vcd file HammingDecoder.msim.vcd -direction
+$end
+$date
+	Fri Nov 23 00:38:02 2018
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module hammingdecoder_vhd_vec_tst $end
+$var wire 1 ! error [3] $end
+$var wire 1 " error [2] $end
+$var wire 1 # error [1] $end
+$var wire 1 $ error [0] $end
+$var wire 1 % m [10] $end
+$var wire 1 & m [9] $end
+$var wire 1 ' m [8] $end
+$var wire 1 ( m [7] $end
+$var wire 1 ) m [6] $end
+$var wire 1 * m [5] $end
+$var wire 1 + m [4] $end
+$var wire 1 , m [3] $end
+$var wire 1 - m [2] $end
+$var wire 1 . m [1] $end
+$var wire 1 / m [0] $end
+$var wire 1 0 sels [10] $end
+$var wire 1 1 sels [9] $end
+$var wire 1 2 sels [8] $end
+$var wire 1 3 sels [7] $end
+$var wire 1 4 sels [6] $end
+$var wire 1 5 sels [5] $end
+$var wire 1 6 sels [4] $end
+$var wire 1 7 sels [3] $end
+$var wire 1 8 sels [2] $end
+$var wire 1 9 sels [1] $end
+$var wire 1 : sels [0] $end
+$var wire 1 ; x [14] $end
+$var wire 1 < x [13] $end
+$var wire 1 = x [12] $end
+$var wire 1 > x [11] $end
+$var wire 1 ? x [10] $end
+$var wire 1 @ x [9] $end
+$var wire 1 A x [8] $end
+$var wire 1 B x [7] $end
+$var wire 1 C x [6] $end
+$var wire 1 D x [5] $end
+$var wire 1 E x [4] $end
+$var wire 1 F x [3] $end
+$var wire 1 G x [2] $end
+$var wire 1 H x [1] $end
+$var wire 1 I x [0] $end
+
+$scope module i1 $end
+$var wire 1 J gnd $end
+$var wire 1 K vcc $end
+$var wire 1 L unknown $end
+$var wire 1 M devoe $end
+$var wire 1 N devclrn $end
+$var wire 1 O devpor $end
+$var wire 1 P ww_devoe $end
+$var wire 1 Q ww_devclrn $end
+$var wire 1 R ww_devpor $end
+$var wire 1 S ww_x [14] $end
+$var wire 1 T ww_x [13] $end
+$var wire 1 U ww_x [12] $end
+$var wire 1 V ww_x [11] $end
+$var wire 1 W ww_x [10] $end
+$var wire 1 X ww_x [9] $end
+$var wire 1 Y ww_x [8] $end
+$var wire 1 Z ww_x [7] $end
+$var wire 1 [ ww_x [6] $end
+$var wire 1 \ ww_x [5] $end
+$var wire 1 ] ww_x [4] $end
+$var wire 1 ^ ww_x [3] $end
+$var wire 1 _ ww_x [2] $end
+$var wire 1 ` ww_x [1] $end
+$var wire 1 a ww_x [0] $end
+$var wire 1 b ww_m [10] $end
+$var wire 1 c ww_m [9] $end
+$var wire 1 d ww_m [8] $end
+$var wire 1 e ww_m [7] $end
+$var wire 1 f ww_m [6] $end
+$var wire 1 g ww_m [5] $end
+$var wire 1 h ww_m [4] $end
+$var wire 1 i ww_m [3] $end
+$var wire 1 j ww_m [2] $end
+$var wire 1 k ww_m [1] $end
+$var wire 1 l ww_m [0] $end
+$var wire 1 m ww_error [3] $end
+$var wire 1 n ww_error [2] $end
+$var wire 1 o ww_error [1] $end
+$var wire 1 p ww_error [0] $end
+$var wire 1 q ww_sels [10] $end
+$var wire 1 r ww_sels [9] $end
+$var wire 1 s ww_sels [8] $end
+$var wire 1 t ww_sels [7] $end
+$var wire 1 u ww_sels [6] $end
+$var wire 1 v ww_sels [5] $end
+$var wire 1 w ww_sels [4] $end
+$var wire 1 x ww_sels [3] $end
+$var wire 1 y ww_sels [2] $end
+$var wire 1 z ww_sels [1] $end
+$var wire 1 { ww_sels [0] $end
+$var wire 1 | \m[0]~output_o\ $end
+$var wire 1 } \m[1]~output_o\ $end
+$var wire 1 ~ \m[2]~output_o\ $end
+$var wire 1 !! \m[3]~output_o\ $end
+$var wire 1 "! \m[4]~output_o\ $end
+$var wire 1 #! \m[5]~output_o\ $end
+$var wire 1 $! \m[6]~output_o\ $end
+$var wire 1 %! \m[7]~output_o\ $end
+$var wire 1 &! \m[8]~output_o\ $end
+$var wire 1 '! \m[9]~output_o\ $end
+$var wire 1 (! \m[10]~output_o\ $end
+$var wire 1 )! \error[0]~output_o\ $end
+$var wire 1 *! \error[1]~output_o\ $end
+$var wire 1 +! \error[2]~output_o\ $end
+$var wire 1 ,! \error[3]~output_o\ $end
+$var wire 1 -! \sels[0]~output_o\ $end
+$var wire 1 .! \sels[1]~output_o\ $end
+$var wire 1 /! \sels[2]~output_o\ $end
+$var wire 1 0! \sels[3]~output_o\ $end
+$var wire 1 1! \sels[4]~output_o\ $end
+$var wire 1 2! \sels[5]~output_o\ $end
+$var wire 1 3! \sels[6]~output_o\ $end
+$var wire 1 4! \sels[7]~output_o\ $end
+$var wire 1 5! \sels[8]~output_o\ $end
+$var wire 1 6! \sels[9]~output_o\ $end
+$var wire 1 7! \sels[10]~output_o\ $end
+$var wire 1 8! \x[4]~input_o\ $end
+$var wire 1 9! \x[9]~input_o\ $end
+$var wire 1 :! \x[10]~input_o\ $end
+$var wire 1 ;! \x[6]~input_o\ $end
+$var wire 1 <! \x[7]~input_o\ $end
+$var wire 1 =! \Decode|p3|o~0_combout\ $end
+$var wire 1 >! \x[14]~input_o\ $end
+$var wire 1 ?! \Decode|x1_x11Bit|o~combout\ $end
+$var wire 1 @! \x[1]~input_o\ $end
+$var wire 1 A! \x[13]~input_o\ $end
+$var wire 1 B! \Decode|p3|o~combout\ $end
+$var wire 1 C! \x[0]~input_o\ $end
+$var wire 1 D! \x[5]~input_o\ $end
+$var wire 1 E! \x[8]~input_o\ $end
+$var wire 1 F! \x[12]~input_o\ $end
+$var wire 1 G! \Decode|p4|o~0_combout\ $end
+$var wire 1 H! \Decode|p4|o~combout\ $end
+$var wire 1 I! \x[11]~input_o\ $end
+$var wire 1 J! \Decode|x1_x2_x3_x4Bit|o~0_combout\ $end
+$var wire 1 K! \x[3]~input_o\ $end
+$var wire 1 L! \Decode|p1|o~0_combout\ $end
+$var wire 1 M! \Decode|p1|o~1_combout\ $end
+$var wire 1 N! \x[2]~input_o\ $end
+$var wire 1 O! \Decode|p2|o~0_combout\ $end
+$var wire 1 P! \Decode|p2|o~1_combout\ $end
+$var wire 1 Q! \Verifier|sel0And|andFinal|o~0_combout\ $end
+$var wire 1 R! \Verifier|mux0out|o~0_combout\ $end
+$var wire 1 S! \Verifier|sel1And|andFinal|o~0_combout\ $end
+$var wire 1 T! \Verifier|mux1out|o~0_combout\ $end
+$var wire 1 U! \Verifier|sel2And|andFinal|o~0_combout\ $end
+$var wire 1 V! \Verifier|mux2out|o~0_combout\ $end
+$var wire 1 W! \Verifier|sel3And|andFinal|o~0_combout\ $end
+$var wire 1 X! \Verifier|mux3out|o~0_combout\ $end
+$var wire 1 Y! \Verifier|sel4And|andFinal|o~0_combout\ $end
+$var wire 1 Z! \Verifier|mux4out|o~0_combout\ $end
+$var wire 1 [! \Verifier|sel5And|andFinal|o~0_combout\ $end
+$var wire 1 \! \Verifier|mux5out|o~0_combout\ $end
+$var wire 1 ]! \Verifier|sel6And|andFinal|o~0_combout\ $end
+$var wire 1 ^! \Verifier|mux6out|o~0_combout\ $end
+$var wire 1 _! \Verifier|sel7And|andFinal|o~combout\ $end
+$var wire 1 `! \Verifier|mux7out|o~0_combout\ $end
+$var wire 1 a! \Verifier|sel8And|andFinal|o~0_combout\ $end
+$var wire 1 b! \Verifier|mux8out|o~0_combout\ $end
+$var wire 1 c! \Verifier|sel9And|andFinal|o~0_combout\ $end
+$var wire 1 d! \Verifier|mux9out|o~0_combout\ $end
+$var wire 1 e! \Verifier|sel10And|andFinal|o~0_combout\ $end
+$var wire 1 f! \Verifier|mux10out|o~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0J
+1K
+xL
+1M
+1N
+1O
+1P
+1Q
+1R
+1|
+0}
+1~
+1!!
+0"!
+1#!
+1$!
+0%!
+1&!
+0'!
+1(!
+1)!
+1*!
+0+!
+0,!
+1-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+19!
+1:!
+1;!
+1<!
+0=!
+1>!
+1?!
+0@!
+0A!
+1B!
+1C!
+0D!
+0E!
+1F!
+1G!
+1H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+0P!
+1Q!
+1R!
+0S!
+0T!
+0U!
+1V!
+0W!
+1X!
+0Y!
+0Z!
+0[!
+1\!
+0]!
+1^!
+0_!
+0`!
+0a!
+1b!
+0c!
+0d!
+0e!
+1f!
+1;
+0<
+1=
+0>
+1?
+1@
+0A
+1B
+1C
+0D
+0E
+0F
+0G
+0H
+1I
+1S
+0T
+1U
+0V
+1W
+1X
+0Y
+1Z
+1[
+0\
+0]
+0^
+0_
+0`
+1a
+1b
+0c
+1d
+0e
+1f
+1g
+0h
+1i
+1j
+0k
+1l
+0m
+0n
+1o
+1p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+1{
+0!
+0"
+1#
+1$
+1%
+0&
+1'
+0(
+1)
+1*
+0+
+1,
+1-
+0.
+1/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+1:
+$end
+#1000000

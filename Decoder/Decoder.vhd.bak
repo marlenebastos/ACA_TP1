@@ -1,0 +1,56 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity Decoder is
+	PORT (m: IN STD_LOGIC_VECTOR(10 downto 0);
+			x: OUT STD_LOGIC_VECTOR(14 downto 0));
+end Decoder;
+
+architecture Structural of Decoder is
+
+	component XOR_1bit is
+		PORT (a,b: IN STD_LOGIC;
+				o: OUT STD_LOGIC);
+	end component;
+
+	signal red0,red1,redT:std_logic;
+	
+	signal yellow,orange,green,yellow_m7,orange_m10:std_logic;
+	signal orange_m2,green_yellow,m3_m5,m7_m8,m10_green,m3_m5_m7_m8: std_logic;
+begin
+	x(14 downto 4) <= m;
+	
+	redBit0: XOR_1bit PORT MAP(m(10),m(9),red0);
+	redBit1: XOR_1bit PORT MAP(m(8),m(7),red1);
+	
+	redBitT: XOR_1bit PORT MAP(red0,red1,redT);
+	
+	yellowBit: XOR_1bit PORT MAP(m(6),m(5),yellow);
+	
+		
+	yellow_m7Bit: XOR_1bit PORT MAP(m(4),yellow,yellow_m7);
+	
+	orange_m2Bit: XOR_1bit PORT MAP(m(9),orange,orange_m2);
+	
+	orangeBit: XOR_1bit PORT MAP(m(3),m(2),orange);
+	
+	greenBit: XOR_1bit PORT MAP(m(10),m(0),green);
+	
+	orange_m10Bit: XOR_1bit PORT MAP(m(1),orange,orange_m10);
+	
+		
+	
+	green_yellowBit: XOR_1bit PORT MAP(green,yellow,green_yellow);
+	
+	m3_m5Bit: XOR_1bit PORT MAP(m(8),m(6),m3_m5);
+	m7_m8Bit: XOR_1bit PORT MAP(m(4),m(3),m7_m8);
+	
+	m10_greenBit: XOR_1bit PORT MAP(green,m(1),m10_green);
+	m3_m5_m7_m8Bit: XOR_1bit PORT MAP(m7_m8,m3_m5,m3_m5_m7_m8);
+	
+	p1: XOR_1bit PORT MAP(redT,yellow_m7,x(3));
+	p2: XOR_1bit PORT MAP(redT,orange_m10,x(2));
+	p3: XOR_1bit PORT MAP(orange_m2,green_yellow,x(1));
+	p4: XOR_1bit PORT MAP(m10_green,m3_m5_m7_m8,x(0));
+
+end Structural;
